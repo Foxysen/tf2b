@@ -1,3 +1,10 @@
+This project is in pre-alpha state nad may even get develed and abandoned. Right now it's a toy~
+
+This fork won't use any legally dubious material (ie code from the leaks)
+
+License of my cool fork: You have to attribute it if you use it!
+
+
 # Source SDK 2013
 
 Source code for Source SDK 2013.
