@@ -1,0 +1,9 @@
+.ninja_deps
+.ninja_log
+
+/lib/public/linux64/mathlib.a
+/lib/public/linux64/raytrace.a
+/lib/public/linux64/tier1.a
+/lib/public/linux64/vgui_controls.a
+
+compile_commands.json

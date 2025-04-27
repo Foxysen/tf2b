@@ -1,5 +1,8 @@
 # Files to ignore when considering what GIT should commit.
 
+#TF2B
+/game/mod_tf_linux64
+
 # Visual Studio 
 *.suo
 *.user
