@@ -1,6 +1,8 @@
 .ninja_deps
 .ninja_log
 
+.clangd
+
 /lib/public/linux64/mathlib.a
 /lib/public/linux64/raytrace.a
 /lib/public/linux64/tier1.a
