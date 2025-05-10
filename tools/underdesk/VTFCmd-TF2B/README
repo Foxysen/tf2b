@@ -1,0 +1,66 @@
+VTFCmd but beaten up into TF2B Linux needs, WIP
+
+Uses Linux version of VTFLib which lacks features useful for 3D model textures. Thus it's intended for GUI only.
+
+To use it, run VTFCmd in a shell along with a .png (TODO: check others) file as an argument. This should produce .vtf file in same folder.
+
+
+Installation:
+
+As Linux Mint user, you will have to install few libraries to make it work. It works better with all the LGPL components.
+
+First, install DevIL library:
+sudo apt-get install libdevil1c2
+
+If you plan to modify the source code of this VTFCmd, install dev version too:
+sudo apt-get install libdevil-dev
+
+Next we will manually install Linux version of VTFLib from github.com/panzi/VTFLib:
+
+First, we need to install txc_dxtn library. It's external library that can compress DX1/DX5 formats. That wasn't part of Mesa due to patent strike fear.
+Script:
+sudo apt-get install mesa-common-dev
+# get source files
+cd ~/
+wget https://people.freedesktop.org/~cbrill/libtxc_dxtn/libtxc_dxtn-1.0.1.tar.gz
+tar xvfz libtxc_dxtn-1.0.1.tar.gz
+cd libtxc_dxtn-1.0.1
+# start the job
+./configure
+make
+sudo make install
+# clean up sources (optional)
+cd ..
+rm -rf libtxc_dxtn-1.0.1 libtxc_dxtn-1.0.1.tar.gz
+
+Finally, VTFLib Linux itself:
+# go into any temp folder
+git clone https://github.com/panzi/VTFLib.git
+mkdir VTFLib/build
+cd VTFLib/build
+cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
+make -j`nproc`
+sudo make install
+# then feel free to delete the folder
+
+
+License:
+
+ * Copyright (C) 2005-2010 Neil Jedrzejewski & Ryan Gregg
+ * Copyright (C) 2025 Foxysen
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+

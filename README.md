@@ -1,8 +1,11 @@
-This project is in pre-alpha state nad may even get develed and abandoned. Right now it's a toy~
+This project is in pre-alpha state and may even get abandoned. Right now it's a toy~
 
 This fork won't use any legally dubious material (ie code from the leaks)
 
-License of my cool fork: You have to attribute it if you use it!
+License of my code: You have to attribute it if you use it! (TBD, may change as I research, may not apply if not compatible with SDK license)
+
+Anything inside "tools" folder is not deriative work of SDK (thus not part of SDK license) and uses its own licenses. Check each one.
+
 
 
 # Source SDK 2013
