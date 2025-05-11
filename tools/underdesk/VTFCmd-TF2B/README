@@ -5,7 +5,7 @@ Uses Linux version of VTFLib which lacks features useful for 3D model textures. 
 To use it, run VTFCmd in a shell along with a .png (TODO: check others) file as an argument. This should produce .vtf file in same folder.
 
 
-Installation:
+# Installation:
 
 As Linux Mint user, you will have to install few libraries to make it work. It works better with all the LGPL components.
 
@@ -44,7 +44,7 @@ sudo make install
 # then feel free to delete the folder
 
 
-License:
+# License:
 
  * Copyright (C) 2005-2010 Neil Jedrzejewski & Ryan Gregg
  * Copyright (C) 2025 Foxysen
@@ -63,4 +63,7 @@ License:
     along with this program; if not, write to the Free Software
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
+# Libraries used covered by LGPL 2.1 license:
 
+ * DevIL - Found in Debian package
+ * VTFLib (Linux) - https://github.com/panzi/VTFLib
